@@ -1,0 +1,24 @@
+<aura:component >
+	
+    <aura:attribute name="beer" type="Beer__c"/>
+    <aura:attribute name="tags" type="String[]"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 nopadding">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="img-wrapper"/>
+                <h3 class="panel-title">{!v.beer.Name}</h3>
+                <p class="level">{!v.beer.Alcohol__c}</p>
+                <p><img src="/resource/beer/img/icon-brewery.png" class="icon"/><a href="{! '#' + v.beer.Brewery__r.Name}">{!v.beer.Brewery__r.Name}</a></p>
+                <p><img src="/resource/beer/img/icon-tags.png" class="icon"/>
+                    <aura:iteration items="{!v.tags}" var="tag">
+                        <a href="{!'#' + tag}" class="tag">{!tag}</a>
+                    </aura:iteration>
+                </p>    
+            </div>
+        </div>
+    </div>
+    
+</aura:component>

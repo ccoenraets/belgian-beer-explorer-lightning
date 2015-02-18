@@ -1,0 +1,15 @@
+.THIS.search-wrapper {
+    position: relative;
+}
+
+.THIS.search-wrapper button {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.THIS input[type="search"]:focus {
+    border-color: #BBB;
+    box-shadow: none;
+    outline: 0 none;
+}

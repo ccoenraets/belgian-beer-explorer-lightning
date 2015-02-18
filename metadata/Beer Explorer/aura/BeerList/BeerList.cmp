@@ -1,0 +1,22 @@
+<aura:component controller="BeerController">
+
+    <aura:attribute name="beers" type="Beer__c[]"/>
+    <aura:attribute name="page" type="integer"/>
+    <aura:attribute name="pages" type="integer"/>
+    <aura:attribute name="total" type="integer"/>
+    
+    <aura:handler event="aura:locationChange" action="{!c.locationChange}"/>
+    <aura:handler event="c:PageChange" action="{!c.pageChange}"/>
+    <aura:handler event="c:AlcoholSelectionChange" action="{!c.alcoholSelectionChange}"/>
+    
+    <c:Paginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}"/>
+
+    <div class="container">
+    	<div class="row">
+            <aura:iteration items="{!v.beers}" var="beer">
+                <c:BeerListItem beer="{!beer}"/>
+            </aura:iteration>
+        </div>
+    </div>
+    
+</aura:component>

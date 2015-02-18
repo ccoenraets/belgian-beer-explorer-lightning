@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/resource/beer/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('/resource/beer/fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+.THIS.navbar-default {
+    background: #F2C335;
+    border: none;
+    font-family: 'Yanone Kaffeesatz', 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.THIS .center-block {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.THIS .center-block.trim {
+    max-width: 480px;
+}
+
+.THIS .nopadding {
+    padding: 0;
+}
+
+.THIS .padding {
+    padding: 4px;
+}
+
+.THIS .btn-link {
+    font-weight: 400;
+    color: #969696;
+    border-radius: 0;
+    border: none !important;
+}
+
+.THIS .btn:focus,
+.THIS .btn:active {
+    outline: solid 1px #F25C05 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px #F25C05;
+}
+
+.THIS .btn-link:focus,
+.THIS .btn-link:active {
+    outline: none !important;
+    box-shadow: none;
+}
+.THIS .btn-link:hover {
+    color: #333333;
+}

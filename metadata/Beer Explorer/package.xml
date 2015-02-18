@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beer Explorer</fullName>
+    <types>
+        <members>BeerController</members>
+        <members>BeerControllerTest</members>
+        <members>PagedResult</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AlcoholSelectionChange</members>
+        <members>AlcoholSlider</members>
+        <members>BeerList</members>
+        <members>BeerListItem</members>
+        <members>BeerSearchBar</members>
+        <members>Explorer</members>
+        <members>PageChange</members>
+        <members>Paginator</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Beer__c.Alcohol__c</members>
+        <members>Beer__c.Brewery__c</members>
+        <members>Beer__c.Image__c</members>
+        <members>Beer__c.Tags__c</members>
+        <members>Brewery__c.BreweryId__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Beer__c</members>
+        <members>Brewery__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Beer__c-Beer Layout</members>
+        <members>Brewery__c-Brewery Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Beer__c.All</members>
+        <members>Brewery__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>beer</members>
+        <name>StaticResource</name>
+    </types>
+    <version>32.0</version>
+</Package>

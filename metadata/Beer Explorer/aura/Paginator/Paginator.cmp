@@ -1,0 +1,29 @@
+<aura:component >
+
+    <aura:attribute name="page" type="integer"/>
+    <aura:attribute name="pages" type="integer"/>
+    <aura:attribute name="total" type="integer"/>
+    
+    <div class="container">
+        <div class="row padding">
+            <div class="col-xs-4 nopadding">
+                <aura:renderIf isTrue="{!v.page > 1}">
+                    <button type="button" class="btn btn-default" onclick="{!c.previousPage}">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous
+                    </button>
+				</aura:renderIf>
+            </div>
+            <div class="col-xs-4 text-center">
+                <div class="legend">{!v.total} beers • page {!v.page} / {!v.pages}</div>
+            </div>
+            <div class="col-xs-4 nopadding">
+                <aura:renderIf isTrue="{!v.page &lt; v.pages}">
+                    <button type="button" class="btn btn-default pull-right" onclick="{!c.nextPage}">
+                        Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+				</aura:renderIf>
+            </div>
+        </div>
+	</div>
+    
+</aura:component>

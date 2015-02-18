@@ -1,0 +1,12 @@
+<aura:component >
+
+    <aura:attribute name="searchKey" type="String"/>
+    <aura:handler event="aura:locationChange" action="{!c.locationChange}"/>
+    
+    <div class="search-wrapper">
+        <input type="text" class="form-control" onkeyup="{!c.searchKeyChange}" value="{!v.searchKey}"
+                placeholder="Enter a partial beer, style, or brewery name"/>
+        <button class="btn btn-link" onclick="{!c.clearText}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+    </div>
+
+</aura:component>
